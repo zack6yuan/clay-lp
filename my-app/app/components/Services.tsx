@@ -1,7 +1,10 @@
 "use client";
 import ServiceCard from "@/components/ServiceCard";
+import OverviewCard from "@/components/OverviewCard";
+import InsightsCard from "@/components/InsightsCard";
 import ServiceHeader from "./ServiceHeader";
 import { useState } from "react";
+import AutomationsCard from "@/components/AutomationsCard";
 
 const services = [
   { title: "Overview", description: "Lorem ipsum dolor sit amet elit." },
@@ -32,14 +35,10 @@ export default function Services() {
         ))}
 
         {/* Graphic section */}
-        <div className="flex flex-col bg-[#FBF6EF] p-5 rounded-3xl">
-          <div className="flex gap-2">
-            {["Lorem", "Ipsum", "Dolor"].map((label) => (
-              <button key={label} className="bg-white rounded-full border border-[#EDE5D9] font-medium text-sm px-3 py-1">
-                {label}
-              </button>
-            ))}
-          </div>
+        <div className="flex flex-col bg-[#FBF6EF] p-5 rounded-3xl mt-5">
+          <OverviewCard />
+          <AutomationsCard />
+          <InsightsCard />
         </div>
       </div>
     </section>
