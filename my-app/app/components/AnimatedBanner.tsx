@@ -1,29 +1,18 @@
-export default function AnimatedBanner() {
-  const bannerText = [
-    "Dolor",
-    "AMET&CO",
-    "consec",
-    "Tempor*",
-    "eiusmod",
-    "ipsum"
-  ]
+const items = ["Magna", "Dolore", "Quis", "Labore", "Veniam", "Duis", "Incidicunt", "Commodo", "Exercitation", "Elit", "Eiusmod", "Aliqua"];
+
+
+export default function Marquee() {
     return (
-      <div className="space-y-5">
-        <div className="flex justify-center uppercase text-gray-500/60 font-semibold mt-10">
-            <p>Trusted by Lorem Ipsum</p>
-            
-        </div>
-        <div>
-          <ul className="flex justify-between">
-            {bannerText.map((item, w) => {
-              return (
-                <li key={w} className="text-gray-300 font-semibold">
-                  {item}
-                </li>
-              )
-            })}
-          </ul>
+      <div className="group relative flex overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div className="flex w-max animate-marquee gap-8 group-hover:[animation-play-state:paused] motion-reduce:animate-none">
+          {Array.from({ length: 12 }).map((_, i) => (
+            <ul key={i} className="flex shrink-0 gap-8" aria-hidden={i > 0}>
+              {items.map((item) => (
+                <li key={item} className="text-sm font-medium uppercase tracking-wide">{item}</li>
+              ))}
+            </ul>
+          ))}
         </div>
       </div>
-    )
-}
+    );
+  }

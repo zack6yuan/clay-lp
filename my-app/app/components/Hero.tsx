@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="bg-green-400 w-2 h-2 rounded-full"></div>
         <p>Lorem ipsum</p>
     </div>
-      <h1 className="text-black font-semibold text-6xl md:text-7xl lg:text-8xl py-10">
+      <h1 className="text-black font-semibold text-5xl md:text-6xl lg:text-7xl py-10">
         Lorem ipsum dolor sit amet magna.
       </h1>
       <p className="text-gray-500 text-2xl md:text-3xl max-w-4xl">
