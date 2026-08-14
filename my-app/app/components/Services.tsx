@@ -2,6 +2,7 @@
 import ServiceCard from "@/components/ServiceCard";
 import OverviewCard from "@/components/OverviewCard";
 import InsightsCard from "@/components/InsightsCard";
+import TeamsCard from "@/components/TeamsCard";
 import ServiceHeader from "./ServiceHeader";
 import { useState } from "react";
 import AutomationsCard from "@/components/AutomationsCard";
@@ -20,7 +21,7 @@ export default function Services() {
     <section className="flex flex-col gap-6">
       <ServiceHeader />
 
-      <div className="flex flex-col gap-2 bg-white shadow-2xl shadow-black/20 p-4 min-w-sm rounded-3xl">
+      <div className="flex flex-col gap-2 p-4 bg-white rounded-3xl shadow-2xl shadow-black/20 min-w-sm">
         {services.map((service, i) => (
           <button
             key={service.title}
@@ -39,6 +40,7 @@ export default function Services() {
           <OverviewCard />
           <AutomationsCard />
           <InsightsCard />
+          <TeamsCard />
         </div>
       </div>
     </section>
