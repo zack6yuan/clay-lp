@@ -1,4 +1,4 @@
-import HeroButtons from "./HeroButtons";
+import HeroButtons from "@/components/HeroButtons";
 
 export default function Hero() {
   return (

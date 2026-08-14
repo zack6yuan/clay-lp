@@ -1,8 +1,8 @@
-import Statistic from "./Statistic";
+import Statistic from "@/components/Statistic";
 
 export default function Statistics() {
     return (
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 py-20 gap-10">
+        <section className="grid grid-cols-1 gap-10 py-20 sm:grid-cols-2 md:grid-cols-4">
           <Statistic
             color="red"
             number={"128k"}
