@@ -2,7 +2,7 @@ import HeroButtons from "@/components/HeroButtons";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center px-5 pt-24 max-w-lg text-center md:max-w-3xl">
+    <div className="flex flex-col items-center w-full px-5 pt-16 md:pt-24 max-w-lg text-center md:max-w-3xl">
       <div className="flex gap-2 items-center bg-[#FFFDF8] text-black uppercase font-semibold rounded-full px-5 py-1 shadow-gray-300/80 shadow-sm">
         <div className="w-2 h-2 bg-green-400 rounded-full"></div>
         <p className="text-sm">Lorem ipsum</p>

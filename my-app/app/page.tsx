@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 gap-20 justify-center pt-10 font-sans">
+    <div className="flex flex-col flex-1 items-center gap-16 md:gap-24 justify-center pt-10 font-sans">
       <Hero />
       <AnimatedBanner />
       <Services />

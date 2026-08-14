@@ -2,7 +2,7 @@ import Statistic from "@/components/Statistic";
 
 export default function Statistics() {
     return (
-        <section className="grid grid-cols-1 gap-10 py-20 sm:grid-cols-2 md:grid-cols-4">
+        <section className="grid grid-cols-1 gap-10 py-10 md:py-20 w-full max-w-5xl mx-auto px-6 sm:grid-cols-2 md:grid-cols-4">
           <Statistic
             color="red"
             number={"128k"}

@@ -27,7 +27,7 @@ function Pill({ dotColor, barWidth }: { dotColor: string; barWidth: string }) {
   export default function InsightsCard() {
     return (
       <div className="flex flex-col gap-3">
-        <div className="flex flex-wrap gap-3 pt-10">
+        <div className="flex flex-wrap gap-3">
           {pills.map((pill, i) => (
             <Pill key={i} {...pill} />
           ))}

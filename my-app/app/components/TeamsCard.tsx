@@ -1,6 +1,6 @@
 export default function TeamsCard() {
   return (
-    <div className="flex flex-col gap-3 pt-10">
+    <div className="flex flex-col gap-3">
       {/* chore: componentize these items */}
       <div className="flex items-center justify-between gap-4 py-5 px-4 rounded-xl border bg-white border-[#EDE5D9]">
         <div className="flex gap-4 items-center">

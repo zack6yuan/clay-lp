@@ -25,3 +25,14 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* Offset in-page anchor jumps so section tops clear the sticky navbar. */
+html {
+  scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

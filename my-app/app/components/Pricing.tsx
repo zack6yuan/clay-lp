@@ -3,13 +3,13 @@ import SectionHeader from "@/components/SectionHeader";
 
 export default function Pricing() {
   return (
-    <section className="px-10">
+    <section id="pricing" className="w-full max-w-6xl mx-auto px-6">
       <SectionHeader
         color={"green"}
         eyebrow={"LOREM"}
         title={"Ullamco laboris nisi"}
       />
-      <div className="flex flex-col gap-5 md:flex-row md:justify-center">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
         <PricingCard
           plan="Basic"
           description="Lorem ipsum dolor sit"

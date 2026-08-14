@@ -30,7 +30,7 @@ export default function PricingCard({
   checkBg = "bg-gray-300",
 }: PricingCardProps) {
   return (
-    <div className={`flex flex-col gap-5 rounded-3xl border border-[#EDE5D9] p-5 md:px-10 lg:px-30 ${cardBg}`}>
+    <div className={`flex flex-col gap-5 rounded-3xl border border-[#EDE5D9] p-6 md:p-8 h-full ${cardBg}`}>
       <div>
         <p className="font-semibold">{plan}</p>
         <p className="text-gray-500">{description}</p>
@@ -50,7 +50,7 @@ export default function PricingCard({
         ))}
       </ul>
 
-      <button className={`px-5 py-2 font-semibold rounded-full border border-gray-300 ${buttonBg} ${buttonColor}`}>
+      <button className={`mt-auto px-5 py-2 font-semibold rounded-full border border-gray-300 ${buttonBg} ${buttonColor}`}>
         {buttonLabel}
       </button>
     </div>

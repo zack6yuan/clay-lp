@@ -3,8 +3,9 @@ import SectionHeader from '@/components/SectionHeader';
 
 export default function Testimonials() {
   return (
-    <section className="flex flex-col space-y-15 px-10">
+    <section id="testimonials" className="flex flex-col gap-10 w-full max-w-6xl mx-auto px-6">
       <SectionHeader color="yellow" eyebrow={'Lorem Ipsum'} title={'Quis nostrud exercitation'} />
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
       <TestimonialCard
         testimonial={`"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"`}
         color="red"
@@ -22,6 +23,7 @@ export default function Testimonials() {
         author={"Amet Elit"}
         description={"Sed. Tempor Ltd."}
       />
+      </div>
     </section>
   )
 }

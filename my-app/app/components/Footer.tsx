@@ -39,7 +39,7 @@ const footerSections = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-10 px-10 py-16 mx-auto w-full max-w-6xl">
+    <footer className="flex flex-col gap-10 px-6 py-16 mx-auto w-full max-w-6xl">
       <div className="flex gap-2 items-center">
         <div className="w-5 h-5 bg-red-500 rounded-full" />
         <span className="text-lg font-semibold">Lorem</span>
@@ -52,7 +52,7 @@ export default function Footer() {
       </div>
       <hr className="text-gray-300" />
       <div className="">
-        <div className="flex justify-between items-center text-sm">
+        <div className="flex flex-col gap-4 text-sm sm:flex-row sm:justify-between sm:items-center">
             <p className="">© 2026 Lorem ipsum dolor sit amet</p>
             <ul className="flex gap-5 text-gray-500">
                 <li>
