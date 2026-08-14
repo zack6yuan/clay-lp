@@ -2,6 +2,8 @@ import AnimatedBanner from "./components/AnimatedBanner";
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import About from '@/components/About';
+import Statistics from '@/components/Statistics';
+import Testimonials from '@/components/Testimonials';
 
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
       <AnimatedBanner />
       <Services />
       <About />
+      <Statistics />
+      <Testimonials />
     </div>
   );
 }
