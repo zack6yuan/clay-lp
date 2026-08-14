@@ -15,7 +15,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="relative mx-4 md:mx-auto max-w-7xl rounded-full bg-[#FFFDF8] py-3 px-4 md:pr-3 md:pl-5 text-black shadow-gray-300 shadow-lg">
+    <nav className="sticky top-4 z-50 px-4">
+      <div className="relative mx-auto max-w-7xl rounded-full bg-[#FFFDF8] py-3 px-4 md:pr-3 md:pl-5 text-black shadow-gray-300 shadow-lg">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -101,6 +102,7 @@ export default function Navbar() {
           </div>
         </div>
       )}
+      </div>
     </nav>
   );
 }

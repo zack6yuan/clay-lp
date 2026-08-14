@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #FBF6EF;
   --foreground: #171717;
 }
 
@@ -13,7 +13,7 @@
 }
 
 @theme {
-  --animate-marquee: marquee 100s linear infinite;
+  --animate-marquee: marquee 175s linear infinite;
 }
 
 @keyframes marquee {
