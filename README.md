@@ -1,2 +1,2 @@
-# landing-page_template
-Lorem Ipsum landing page template.
+# Landing Page Template
+Lorem Ipsum landing page template, inspired by clay.com
